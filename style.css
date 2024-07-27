@@ -1,0 +1,401 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo-right {
+    flex: 1;
+    text-align: right;
+}
+
+.logo-right h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.section {
+    padding: 2rem 0;
+    background: #fff;
+    margin-bottom: 1rem;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Existing styles... */
+
+/* Add styles for resource images */
+.resource-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text and image inside resource item */
+}
+
+.resource-img {
+    max-width: 100%; /* Ensure image fits within its container */
+    height: 50%; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+    margin-bottom: 1rem; /* Space below the image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .resource-item {
+        width: 45%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .resource-item {
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
+
+/* Existing styles... */
+
+/* Add this new style for the centered image section */
+.centered-image {
+    height: 100%; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f4f4f4; /* Optional: background color for contrast */
+}
+
+.centered-img {
+    max-width: 100%; /* Make sure the image fits within the viewport */
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 50px; /* Optional: rounded corners for the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust the centered image container if necessary */
+}
+
+@media (max-width: 600px) {
+    /* Adjust the centered image container if necessary */
+}
+
+
+.cta {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    background: #555;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.resources {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.resource-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.resource-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.wallpaper {
+    background: url('/assets/IMG_2473.JPG') no-repeat center center/cover;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .cards, .resources {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .card, .resource-item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo, .logo-right {
+        text-align: center;
+    }
+
+    .section h2, .section p {
+        padding: 0 1rem;
+    }
+
+    .wallpaper {
+        height: 300px;
+    }
+}
+/* Existing styles... */
+
+/* Add this new style for the welcome text section */
+.welcome-text {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f4f4f4; /* Optional: background color for contrast */
+}
+
+.text-content {
+    text-align: center; /* Center text horizontally within the container */
+}
+
+.text-content h2 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    margin: 0 0 1rem; /* Margin below the heading */
+    padding: 1rem; /* Optional: padding around the heading */
+    background: #fff; /* Optional: background color for the heading */
+    border-radius: 8px; /* Optional: rounded corners for the background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.text-content p {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margins */
+    padding: 0 1rem; /* Optional: padding around the paragraph */
+    background: #fff; /* Optional: background color for the paragraph */
+    border-radius: 8px; /* Optional: rounded corners for the background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .text-content h2 {
+        font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    }
+    
+    .text-content p {
+        font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .text-content h2 {
+        font-size: 1.2rem; /* Further adjust the font size for very small screens */
+    }
+    
+    .text-content p {
+        font-size: 0.9rem; /* Further adjust the font size for very small screens */
+    }
+}
+
+/* Existing styles... */
+
+/* Add styles for the social media section */
+.social-media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 1rem; /* Space between items */
+    padding: 1rem;
+}
+
+.social-media-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-icon {
+    width: 50px; /* Adjust icon size */
+    height: 50px;
+    margin-bottom: 0.5rem; /* Space below the icon */
+}
+
+.social-media-item span {
+    font-size: 1rem; /* Adjust font size */
+}
+
+@media (max-width: 768px) {
+    .social-media-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .social-media-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust for very small screens */
+    }
+}
+
+
